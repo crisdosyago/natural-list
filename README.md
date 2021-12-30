@@ -6,7 +6,7 @@ A self-organizing list that naturally obtains an optimal length
 
 Actually that should probably be motivation, inspiration and idea.
 
-Motivation:
+## Motivation:
 
 ![idea](https://user-images.githubusercontent.com/22254235/147742669-8946ecb2-9ad8-4ac6-8698-a968471d6bc8.PNG)
 
@@ -16,10 +16,13 @@ But here's the problem, which is the motivation for this library...I never feel 
 
 So I realized this would be better if the list expanded and shrank to encompass (not all) but "most" of the categories I am recently using. Why should it be a fixed number of slots? Everyone has different organizing habits, and certainly even changes their organizing habits at different times. So a real natural list, should be able to adapt to that.
 
-Inspiration:
+## Inspiration:
 
 This part is fairly vague right now but I just had a flash of insight, a sense that this could be somehow done mathematically. That there should both be a natural way to decide a "time window" on which to assess the range of categories used (and in which to try to represent the most common categories), and also to, for such a time window, decide the number (and the instances) of the categories "common" in that window. These values, timeWindow, commonCategoryCount, and commonCategoryNames, should be all calculable from the human's behavior somehow, in a way that can achieve some optimal property relevant to usability, and particularly the case I describe above. 
 
-Idea:
+## Idea:
 
 Not sure yet on specifics, but could it have something to do with using probability distributions? Perhaps probability distributions relevant to nested categories arranged as trees?
+
+There's probably some heuristic, that's both more general, more elegant, and more useful in this case than simply "least recently used" that gives us the desired properties introduced above. That's the idea anyway, for now... let's see!
+:p ;) xx;p
